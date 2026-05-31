@@ -1,0 +1,23 @@
+{
+    "fase": "fase2_entrenamiento",
+    "img_size": 256,
+    "train": 1000,
+    "val": 200,
+    "test": 200,
+    "elementos": [
+        "paralelas",
+        "arco",
+        "parcial",
+        "intersecciones",
+        "oclusion",
+        "rectangulo",
+        "linea"
+    ],
+    "ruido": [
+        "gaussiano_agresivo",
+        "blur_variable",
+        "iluminacion_no_uniforme",
+        "distractores_agresivos"
+    ],
+    "notas": "Geometr\u00eda compleja con oclusi\u00f3n, arcos, paralelas e intersecciones."
+}

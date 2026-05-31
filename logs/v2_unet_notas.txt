@@ -1,0 +1,35 @@
+
+=======================================================
+RESUMEN — as_built | v2_unet
+=======================================================
+
+QUÉ CAMBIÓ RESPECTO A v1:
+- Arquitectura: CNN simple → U-Net con skip connections
+- Se agregó BatchNorm en cada bloque convolucional
+- Se guarda mejor modelo por IoU además de por loss
+- Curvas comparativas muestran v1 como referencia
+
+RESULTADOS:
+- Baseline Canny IoU : 0.0555
+- v1 CNN IoU         : 0.5833
+- v2 U-Net IoU       : 0.9299
+- v2 U-Net Dice      : 0.9635
+- Mejora IoU v1→v2   : +0.3466
+- Mejora Dice v1→v2  : +0.2272
+
+QUÉ FUNCIONÓ:
+- (completar después de ver resultados)
+
+QUÉ NO FUNCIONÓ:
+- (completar después de ver resultados)
+
+ANÁLISIS VISUAL:
+- ¿Los bordes son más limpios que v1?    (completar)
+- ¿Las líneas son más continuas?         (completar)
+- ¿Bajaron los FP y FN en los bordes?   (completar)
+
+PRÓXIMA VERSIÓN v3:
+- Si v2 mejora visualmente → ajustar hiperparámetros
+- Si v2 no mejora → revisar loss function (Dice Loss)
+- Evaluar agregar augmentations más agresivas
+=======================================================

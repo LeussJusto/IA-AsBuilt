@@ -1,0 +1,47 @@
+
+=======================================================
+RESUMEN — as_built | v3_unet_acumulativo
+=======================================================
+
+QUÉ CAMBIÓ RESPECTO A v2:
+- Dataset: solo F1 → F1 + F2 acumulativo (doble de datos)
+- Se agrega geometría compleja: arcos, paralelas,
+  intersecciones, oclusiones, figuras parciales
+- Ruido más agresivo: iluminación no uniforme,
+  distractores complejos, sombras rectangulares
+- Learning rate reducido: 1e-3 → 5e-4
+- Épocas aumentadas: 50 → 60
+- Evaluación desglosada por tipo de dataset
+
+RESULTADOS GLOBALES:
+- Baseline Canny IoU : 0.0555
+- v1 CNN IoU         : 0.5833
+- v2 U-Net IoU       : 0.9299
+- v3 U-Net IoU       : 0.9329
+- v3 U-Net Dice      : 0.9651
+- Mejora IoU v2→v3   : +0.0030
+
+RESULTADOS DESGLOSADOS:
+- F1 Geometría Básica : IoU 0.9390 | Dice 0.9685
+- F1 Ruido            : IoU 0.9206 | Dice 0.9585
+- F2 Geometría Compleja: IoU 0.9517 | Dice 0.9752
+- F2 Ruido Complejo   : IoU 0.9201 | Dice 0.9583
+
+QUÉ FUNCIONÓ:
+- (completar después de ver resultados)
+
+QUÉ NO FUNCIONÓ:
+- (completar después de ver resultados)
+
+ANÁLISIS VISUAL:
+- ¿Mejora en arcos y curvas?             (completar)
+- ¿Mejora en intersecciones?             (completar)
+- ¿Mantiene calidad en geometría básica? (completar)
+- ¿Mejora en imagen real estantería?     (completar)
+
+PRÓXIMA FASE:
+- Si v3 aprende bien geometría compleja →
+  avanzar a Fase 3: simulación de tuberías
+- Si v3 falla en oclusiones →
+  agregar más ejemplos de oclusión al dataset
+=======================================================

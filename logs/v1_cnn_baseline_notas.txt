@@ -1,0 +1,27 @@
+
+=======================================================
+RESUMEN — as_built | v1_cnn_baseline
+=======================================================
+
+QUÉ SE HIZO:
+- Dataset Fase 1: geometría básica (1400 imgs) + ruido (1400 imgs)
+- Arquitectura CNN simple encoder-decoder
+- Entrenamiento con BCELoss + Adam + EarlyStopping
+- Evaluación con IoU, Dice Score y comparación vs Canny baseline
+
+RESULTADOS:
+- Baseline Canny IoU : 0.0555
+- Test IoU           : 0.5833
+- Test Dice          : 0.7363
+- ¿Supera baseline?  : Sí
+
+QUÉ FUNCIONÓ:
+- (completar después de ver resultados)
+
+QUÉ NO FUNCIONÓ:
+- (completar después de ver resultados)
+
+PRÓXIMA VERSIÓN:
+- Migrar a U-Net para mejor precisión estructural
+- Evaluar si se necesita más variedad en el dataset
+=======================================================

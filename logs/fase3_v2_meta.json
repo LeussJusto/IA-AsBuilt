@@ -1,0 +1,27 @@
+{
+    "fase": "fase3_v2_entrenamiento",
+    "img_size": 256,
+    "train": 1000,
+    "val": 200,
+    "test": 200,
+    "cambios_vs_f3_original": [
+        "Fondos realistas: azulejo, ladrillo, concreto rugoso",
+        "Color tuber\u00edas m\u00e1s cercano a PVC real",
+        "Grosor reducido: 3-10px en vez de 4-12px",
+        "Tubos de fondo m\u00e1s oscuros y de bajo contraste",
+        "Ruido sobre fondos realistas"
+    ],
+    "fondos": [
+        "azulejo",
+        "ladrillo",
+        "concreto_rugoso"
+    ],
+    "elementos": [
+        "tramo",
+        "codo",
+        "conexion_T",
+        "cruz",
+        "red"
+    ],
+    "notas": "F3v2 \u2014 fondos realistas para mejorar generalizaci\u00f3n a im\u00e1genes reales"
+}

@@ -1,0 +1,9 @@
+{
+    "Versión": "v1_cnn_baseline",
+    "Arquitectura": "CNN Baseline",
+    "Baseline Canny": "0.0555",
+    "Test IoU": "0.5833",
+    "Test Dice": "0.7363",
+    "Test Loss": "0.0215",
+    "Supera Baseline": "✅ Sí"
+}

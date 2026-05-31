@@ -1,0 +1,41 @@
+
+=======================================================
+RESUMEN — as_built | v4_unet_tuberias
+=======================================================
+
+CAMBIO PRINCIPAL vs versiones anteriores:
+- Dataset leído desde RAM local en vez de Drive
+- Eliminó espera de 3 horas en primera época
+- NUM_WORKERS=4 + pin_memory=True
+- Dataset: F1+F2+F3 acumulativo (6000 train)
+
+RESULTADOS GLOBALES:
+- Baseline Canny : 0.0555
+- v1 CNN         : 0.5833
+- v2 U-Net       : 0.9299
+- v3 U-Net       : 0.9329
+- v4 U-Net       : 0.9303
+- Mejora v3→v4   : -0.0026
+
+F3 TUBERÍAS:
+- IoU  : 0.9277
+- Dice : 0.9624
+
+DESGLOSE:
+- F1 Geometría Básica         : IoU 0.9372 | Dice 0.9675
+- F1 Ruido                    : IoU 0.9219 | Dice 0.9593
+- F2 Geometría Compleja       : IoU 0.9511 | Dice 0.9749
+- F2 Ruido Complejo           : IoU 0.9159 | Dice 0.9560
+- F3 Tuberías Sintéticas      : IoU 0.9296 | Dice 0.9634
+- F3 Tuberías con Ruido       : IoU 0.9259 | Dice 0.9614
+
+QUÉ FUNCIONÓ:
+- (completar después de ver resultados)
+
+QUÉ NO FUNCIONÓ:
+- (completar después de ver resultados)
+
+PRÓXIMA FASE:
+- Si F3 IoU > 0.85 → avanzar a dataset real
+- Si F3 IoU < 0.80 → más datos de tuberías
+=======================================================

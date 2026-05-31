@@ -1,0 +1,30 @@
+{
+    "fase": "fase3_entrenamiento",
+    "img_size": 256,
+    "train": 1000,
+    "val": 200,
+    "test": 200,
+    "elementos": [
+        "tramo_recto",
+        "codo_90",
+        "conexion_T",
+        "conexion_cruz",
+        "red_tuberias"
+    ],
+    "detalles": {
+        "grosor_min": 4,
+        "grosor_max": 12,
+        "mask": "eje central de tuber\u00eda \u2014 l\u00ednea de 2px",
+        "sombras": true,
+        "abrazaderas": true,
+        "fondo": "textura de pared con manchas",
+        "ruido": [
+            "gaussiano",
+            "blur",
+            "iluminacion_lateral",
+            "tubos_fondo",
+            "manchas_humedad"
+        ]
+    },
+    "notas": "Primera fase con geometr\u00eda real de tuber\u00edas industriales."
+}
