@@ -23,6 +23,7 @@ El objetivo es desarrollar un modelo robusto capaz de identificar trazas estruct
 # Dataset y Modelos: 
 
 Dataset: https://huggingface.co/leuss1224/asbuilt-unet-models
+
 Modelos: https://huggingface.co/datasets/leuss1224/asbuilt-unet-datasets
 
 ---
